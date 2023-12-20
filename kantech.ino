@@ -45,53 +45,77 @@ NexTouch *nex_listen_list[] = {
 
 void x1_Release(void *ptr) {
   updateOrderStatus ("complete", 0);
-  desc[0].Set_background_color_bco(31);
+  delay(1000);
+  buttonPressCallback(bUpdate);  
+  //desc[0].Set_background_color_bco(31);
 }
 void x2_Release(void *ptr) {
   updateOrderStatus ("complete", 1);
-  desc[1].Set_background_color_bco(31);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[1].Set_background_color_bco(31);
 }
 void x3_Release(void *ptr) {
   updateOrderStatus ("complete", 2);
-  desc[2].Set_background_color_bco(31);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[2].Set_background_color_bco(31);
 }
 void x4_Release(void *ptr) {
   updateOrderStatus ("complete", 3);
-  desc[3].Set_background_color_bco(31);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[3].Set_background_color_bco(31);
 }
 
 void v1_Release(void *ptr) {
   updateOrderStatus ("pickup", 0);
-  desc[0].Set_background_color_bco(34784);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[0].Set_background_color_bco(34784);
 }
 void v2_Release(void *ptr) {
   updateOrderStatus ("pickup", 1);
-  desc[1].Set_background_color_bco(34784);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[1].Set_background_color_bco(34784);
 }
 void v3_Release(void *ptr) {
   updateOrderStatus ("pickup", 2);
-  desc[2].Set_background_color_bco(34784);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[2].Set_background_color_bco(34784);
 }
 void v4_Release(void *ptr) {
   updateOrderStatus ("pickup", 3);
-  desc[3].Set_background_color_bco(34784);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[3].Set_background_color_bco(34784);
 }
 
 void m1_Release(void *ptr) {
   updateOrderStatus("process", 0);
-  desc[0].Set_background_color_bco(64520);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[0].Set_background_color_bco(64520);
 }
 void m2_Release(void *ptr) {
   updateOrderStatus("process", 1);
-  desc[1].Set_background_color_bco(64520);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[1].Set_background_color_bco(64520);
 }
 void m3_Release(void *ptr) {
   updateOrderStatus("process", 2);
-  desc[2].Set_background_color_bco(64520);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[2].Set_background_color_bco(64520);
 }
 void m4_Release(void *ptr) {
   updateOrderStatus("process", 3);
-  desc[3].Set_background_color_bco(64520);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+  //desc[3].Set_background_color_bco(64520);
 }
 
 void bUpdatePressCallback(void *ptr) {
@@ -218,11 +242,28 @@ void buttonPressCallback(NexButton& button) {
             // Data available, update the desc text
             JsonObject order = orders[i];
             const char* menuName = order["menu"]["name"];
+            const char* status = order["status"];
             Serial.print("Menu Name ");
             Serial.print(i + 1);
             Serial.print(": ");
             Serial.println(menuName);
+            Serial.print("Status ");
+            Serial.print(i + 1);
+            Serial.print(": ");
+            Serial.println(status);
+            
             desc[i].setText(menuName);
+
+            // Set background color based on status
+            if (strcmp(status, "process") == 0) {
+              desc[i].Set_background_color_bco(64520);
+            } else if (strcmp(status, "pickup") == 0) {
+              desc[i].Set_background_color_bco(34784);
+            } else {
+              // Handle other status values if needed
+              // For now, set a default background color
+              desc[i].Set_background_color_bco(50712);
+            }
           } else {
             // No data available, set desc text to blank
             desc[i].setText("");
