@@ -12,34 +12,54 @@ String orderIds[7];
 unsigned long lastButtonPressTime = 0;  // Variable to store the last execution time
 
 // Number of desc objects
-const int NUM_DESC = 4; // Adjust this based on your requirements
+const int NUM_DESC = 8; // Adjust this based on your requirements
 
 NexText desc[NUM_DESC] = {
-  NexText(0, 32, "desc1"),
-  NexText(0, 30, "desc2"), // Add more as needed
-  NexText(0,31,"desc3"),
-  NexText(0,32,"desc4")
+  NexText(0, 28, "desc1"),
+  NexText(0, 29, "desc2"), // Add more as needed
+  NexText(0, 30, "desc3"),
+  NexText(0, 31, "desc4"),
+  NexText(1, 26, "desc5"),
+  NexText(1, 27, "desc6"), 
+  NexText(1, 28, "desc7"),
+  NexText(1, 29, "desc8")
 };
 
-NexButton v1 = NexButton(0,6,"v1");
-NexButton m1 = NexButton(0,7,"m1");
-NexButton x1 = NexButton(0,8,"x1");
-NexButton v2 = NexButton(0,25,"v2");
-NexButton m2 = NexButton(0,26,"m2");
-NexButton x2 = NexButton(0,24,"x2");
-NexButton v3 = NexButton(0,13,"v3");
-NexButton m3 = NexButton(0,12,"m3");
-NexButton x3 = NexButton(0,11,"x3");
-NexButton v4 = NexButton(0,21,"v4");
-NexButton m4 = NexButton(0,22,"m4");
-NexButton x4 = NexButton(0,23,"x4");
-NexButton bUpdate = NexButton(0,2,"bUpdate");
+NexButton v1 = NexButton(0,5,"v1");
+NexButton m1 = NexButton(0,6,"m1");
+NexButton x1 = NexButton(0,7,"x1");
+NexButton v2 = NexButton(0,24,"v2");
+NexButton m2 = NexButton(0,25,"m2");
+NexButton x2 = NexButton(0,23,"x2");
+NexButton v3 = NexButton(0,12,"v3");
+NexButton m3 = NexButton(0,11,"m3");
+NexButton x3 = NexButton(0,10,"x3");
+NexButton v4 = NexButton(0,20,"v4");
+NexButton m4 = NexButton(0,21,"m4");
+NexButton x4 = NexButton(0,22,"x4");
+NexButton v5 = NexButton(1,5,"v5");
+NexButton m5 = NexButton(1,6,"m5");
+NexButton x5 = NexButton(1,7,"x5");
+NexButton v6 = NexButton(1,22,"v6");
+NexButton m6 = NexButton(1,23,"m6");
+NexButton x6 = NexButton(1,21,"x6");
+NexButton v7 = NexButton(1,12,"v7");
+NexButton m7 = NexButton(1,11,"m7");
+NexButton x7 = NexButton(1,10,"x7");
+NexButton v8 = NexButton(1,18,"v8");
+NexButton m8 = NexButton(1,19,"m8");
+NexButton x8 = NexButton(1,20,"x8");
+NexButton bNext = NexButton(0,2,"bNext");
+NexButton bBackt = NexButton(1,1,"bBackt");
+NexButton bUpdate = NexButton(0,1,"bUpdate");
+NexButton bUpdate1 = NexButton(1,2,"bUpdate1");
 
 NexTouch *nex_listen_list[] = {
-  &v1, &v2, &v3, &v4,
-  &m1, &m2, &m3, &m4,
-  &x1, &x2, &x3, &x4,
-  &bUpdate,
+  &v1, &v2, &v3, &v4, &v5, &v6, &v7, &v8,
+  &m1, &m2, &m3, &m4, &m5, &m6, &m7, &m8,
+  &x1, &x2, &x3, &x4, &x5, &x6, &x7, &x8,
+  &bNext, &bBackt,
+  &bUpdate, &bUpdate1,
   NULL
 };
 
@@ -47,75 +67,137 @@ void x1_Release(void *ptr) {
   updateOrderStatus ("complete", 0);
   delay(1000);
   buttonPressCallback(bUpdate);  
-  //desc[0].Set_background_color_bco(31);
 }
 void x2_Release(void *ptr) {
   updateOrderStatus ("complete", 1);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[1].Set_background_color_bco(31);
 }
 void x3_Release(void *ptr) {
   updateOrderStatus ("complete", 2);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[2].Set_background_color_bco(31);
 }
 void x4_Release(void *ptr) {
   updateOrderStatus ("complete", 3);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[3].Set_background_color_bco(31);
+}
+void x5_Release(void *ptr) {
+  updateOrderStatus ("complete", 4);
+  delay(1000);
+  buttonPressCallback(bUpdate);  
+}
+void x6_Release(void *ptr) {
+  updateOrderStatus ("complete", 5);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void x7_Release(void *ptr) {
+  updateOrderStatus ("complete", 6);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void x8_Release(void *ptr) {
+  updateOrderStatus ("complete", 7);
+  delay(1000);
+  buttonPressCallback(bUpdate);
 }
 
 void v1_Release(void *ptr) {
   updateOrderStatus ("pickup", 0);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[0].Set_background_color_bco(34784);
 }
 void v2_Release(void *ptr) {
   updateOrderStatus ("pickup", 1);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[1].Set_background_color_bco(34784);
 }
 void v3_Release(void *ptr) {
   updateOrderStatus ("pickup", 2);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[2].Set_background_color_bco(34784);
 }
 void v4_Release(void *ptr) {
   updateOrderStatus ("pickup", 3);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[3].Set_background_color_bco(34784);
+}
+void v5_Release(void *ptr) {
+  updateOrderStatus ("pickup", 4);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void v6_Release(void *ptr) {
+  updateOrderStatus ("pickup", 5);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void v7_Release(void *ptr) {
+  updateOrderStatus ("pickup", 6);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void v8_Release(void *ptr) {
+  updateOrderStatus ("pickup", 7);
+  delay(1000);
+  buttonPressCallback(bUpdate);
 }
 
 void m1_Release(void *ptr) {
   updateOrderStatus("process", 0);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[0].Set_background_color_bco(64520);
 }
 void m2_Release(void *ptr) {
   updateOrderStatus("process", 1);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[1].Set_background_color_bco(64520);
 }
 void m3_Release(void *ptr) {
   updateOrderStatus("process", 2);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[2].Set_background_color_bco(64520);
 }
 void m4_Release(void *ptr) {
   updateOrderStatus("process", 3);
   delay(1000);
   buttonPressCallback(bUpdate);
-  //desc[3].Set_background_color_bco(64520);
+}
+void m5_Release(void *ptr) {
+  updateOrderStatus("process", 4);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void m6_Release(void *ptr) {
+  updateOrderStatus("process", 5);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void m7_Release(void *ptr) {
+  updateOrderStatus("process", 6);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+void m8_Release(void *ptr) {
+  updateOrderStatus("process", 7);
+  delay(1000);
+  buttonPressCallback(bUpdate);
+}
+
+void bNextRelease(void *ptr) {
+  buttonPressCallback(bNext);
+  Serial.println("bNext button pressed");
+}
+
+void bBacktRelease(void *ptr) {
+  buttonPressCallback(bBackt);
+  Serial.println("bBackt button pressed");
+}
+
+void bUpdate1Release(void *ptr) {
+  buttonPressCallback(bUpdate1);
 }
 
 void bUpdatePressCallback(void *ptr) {
@@ -173,15 +255,30 @@ void setup() {
   v2.attachPop(v2_Release, &v2);
   v3.attachPop(v3_Release, &v3);
   v4.attachPop(v4_Release, &v4);
+  v5.attachPop(v5_Release, &v5);
+  v6.attachPop(v6_Release, &v6);
+  v7.attachPop(v7_Release, &v7);
+  v8.attachPop(v8_Release, &v8);
   m1.attachPop(m1_Release, &m1);
   m2.attachPop(m2_Release, &m2);
   m3.attachPop(m3_Release, &m3);
   m4.attachPop(m4_Release, &m4);
+  m5.attachPop(m5_Release, &m5);
+  m6.attachPop(m6_Release, &m6);
+  m7.attachPop(m7_Release, &m7);
+  m8.attachPop(m8_Release, &m8);
   x1.attachPop(x1_Release, &x1);
   x2.attachPop(x2_Release, &x2);
   x3.attachPop(x3_Release, &x3);
   x4.attachPop(x4_Release, &x4);
+  x5.attachPop(x5_Release, &x5);
+  x6.attachPop(x6_Release, &x6);
+  x7.attachPop(x7_Release, &x7);
+  x8.attachPop(x8_Release, &x8);
   bUpdate.attachPop(bUpdatePressCallback, &bUpdate);
+  bNext.attachPop(bNextRelease, &bNext);
+  bBackt.attachPop(bBacktRelease, &bBackt);
+  bUpdate1.attachPop(bUpdate1Release, &bUpdate1);
 }
 
 void loop() {
