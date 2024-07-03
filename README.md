@@ -5,7 +5,7 @@
 ### Cara Menambah Anggota Keluarga:
 
 1. **Buka MOANA**
-   - Klik menu "Profile" di bagian bawah kanan.
+   * Klik menu "Profile" di bagian bawah kanan.
    - Masukkan kredensial untuk masuk ke menu tersebut.
 2. **Tambah Anggota Keluarga**
    - Klik "Personal & Family Information", lalu klik "+ Add Family Member".
