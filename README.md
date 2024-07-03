@@ -10,8 +10,10 @@
 2. **Tambah Anggota Keluarga**
    - Klik "Personal & Family Information", lalu klik "+ Add Family Member".
    - Isi data sesuai dengan anggota keluarga.
-   - Jika ingin menjadikan anggota keluarga sebagai kontak darurat, pilih opsi yang tersedia.
+   - Pilih opsi untuk menjadikan anggota keluarga sebagai kontak emergency jika karyawan belum pernah menetapkan kontak emergency
    - Pilih "Set Homebase Option" untuk "type relationship" Orang Tua/Mertua/Anak jika ingin menjadikan alamat anggota keluarga sebagai Homebase.
+   - Akan ada verifikasi OCR terhadap perubahan data.
+   - Jika verifikasi OCR lolos, data akan diperbarui. Jika tidak, tunggu persetujuan dari HCM.
 
 ### Cara Mengubah Data Keluarga:
 
