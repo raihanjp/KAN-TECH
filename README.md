@@ -2,43 +2,52 @@
 
 **Personal & Family Information** adalah informasi personal seputar karyawan dan keluarga karyawan. Karyawan dapat menambah dan mengubah data tersebut.
 
-### Cara Menambah Anggota Keluarga:
-
-1. **Buka MOANA**
+**Cara Menambah Anggota Keluarga**
+Berikut cara untuk menambah anggota keluarga:
+*Buka MOANA*
    * Klik menu "Profile" di bagian bawah kanan.
-   - Masukkan kredensial untuk masuk ke menu tersebut.
-2. **Tambah Anggota Keluarga**
-   - Klik "Personal & Family Information", lalu klik "+ Add Family Member".
-   - Isi data sesuai dengan anggota keluarga.
-   - Pilih opsi untuk menjadikan anggota keluarga sebagai kontak emergency jika karyawan belum pernah menetapkan kontak emergency
-   - Pilih "Set Homebase Option" untuk "type relationship" Orang Tua/Mertua/Anak jika ingin menjadikan alamat anggota keluarga sebagai Homebase.
-   - Akan ada verifikasi OCR terhadap perubahan data.
-   - Jika verifikasi OCR lolos, data akan diperbarui. Jika tidak, tunggu persetujuan dari HCM.
+   * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+**Tambah Anggota Keluarga**
+   * Klik menu "Personal & Family Information", lalu klik "+ Add Family Member".
+   * Isi data sesuai dengan anggota keluarga.
+   * Jelasin dokumen yang dibutuhkan?
+   * Jika sudah selesai mengisi data keluarga, request akan masuk ke keranjang terlebih dahulu, pilij: 
+     * Tombol "See Request Cart" lalu klik tombol "Submit All" jika ingin mengirimkan semua request data atau 
+     * Tombol "Back" jika ingin menambah data anggota keluarga lainnya. Tombol keranjang juga dapat dilihat di bagian bawah kanan pada menu "Personal & Family Info".
+   * Penambahan data yang disubmit oleh karyawan akan disetujui oleh PBP terlebih dahulu. Request dari karyawan HO akan disetujui oleh PBP per direktorat, sementara karyawan area akan disetujui oleh PBP per regional.
 
-### Cara Mengubah Data Keluarga:
+# Cara Mengubah Data Keluarga:
 
-1. **Buka MOANA**
-   - Klik menu "Profile" di bagian bawah kanan.
-   - Masukkan kredensial untuk masuk ke menu tersebut.
-2. **Ubah Data Keluarga**
-   - Klik "Personal & Family Information", lalu pilih nama anggota keluarga yang ingin diubah datanya.
-   - Pilih menu Profile/Address/Education yang ingin diubah datanya.
-   - Setelah perubahan, pilih:
-     - Tombol keranjang di bagian bawah kiri jika mengubah data lebih dari satu anggota keluarga.
-     - Tombol "Submit Request" jika hanya mengubah data satu anggota keluarga.
-   - Akan ada verifikasi OCR terhadap perubahan data.
-   - Jika verifikasi OCR lolos, data akan diperbarui. Jika tidak, tunggu persetujuan dari HCM.
+**Buka MOANA**
+   * Klik menu "Profile" di bagian bawah kanan.
+   * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+**Ubah Data Keluarga**
+   * Klik "Personal & Family Information", lalu pilih nama anggota keluarga yang ingin diubah datanya.
+   * Pilih menu Profile/Address/Education yang ingin diubah datanya.
+   * Setelah perubahan, request akan masuk ke keranjang terlebih dahulu, pilih:
+     * Tombol "See Request Cart" lalu klik tombol "Submit All" jika ingin mengirimkan semua request data atau 
+     * Tombol "Back" jika ingin menambah data anggota keluarga lainnya. Tombol keranjang juga dapat dilihat di bagian bawah kanan pada menu "Personal & Family Info".
+   * Perubahan data yang disubmit oleh karyawan akan disetujui oleh PBP terlebih dahulu. Request dari karyawan HO akan disetujui oleh PBP per direktorat, sementara karyawan area akan disetujui oleh PBP per regional.
 
-### Request Pindah Homebase:
+# Request Perubahan Homebase:
 
-1. **Periode Pindah Homebase**
-   - Request pindah homebase hanya dapat dilakukan selama periode yang ditentukan.
-2. **Buka MOANA**
-   - Klik menu "Profile" di bagian bawah kanan.
-   - Masukkan kredensial untuk masuk ke menu tersebut.
-3. **Pilih Homebase Baru**
-   - Klik "Request change your homebase".
-   - Pilih kota yang akan dijadikan homebase sesuai dengan alamat anggota keluarga inti (Orang Tua, Mertua, Anak).
-   - Lengkapi berkas yang diminta (Kartu Keluarga).
-   - Klik tombol "Request" untuk verifikasi sistem.
-   - Periksa status permintaan pindah homebase di menu "Worklist".
+**Periode Pemilihan Ulang Homebase**
+   * Request Pemilihan Ulang homebase hanya dapat dilakukan selama periode yang ditentukan.
+   * Pastikan untuk melengkapi terlebih dahulu data keluarga pada menu "Personal & Family Information"
+**Buka MOANA**
+   * Klik menu "Profile" di bagian bawah kanan.
+   * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+**Pilih Homebase Baru**
+   * Klik "Request change your homebase".
+   * Pilih kota yang akan dijadikan homebase sesuai dengan alamat anggota keluarga inti (Karyawan, Oranguta, Mertua).
+   * Lengkapi berkas yang diminta (Kartu Keluarga).
+   * Klik tombol "Request" untuk verifikasi sistem.
+   * Proses akan memakan waktu kurang lebih 1 menit. Mohon untuk tidak menutup atau berpindah aplikasi
+   * Status permintaan perubahan homebase dapat dilihat di menu "Worklist" bagian "Submission".
+
+## Keyword
+* Homebase
+* Personal info
+* Family info
+* Personal & family info
+* pindah homebase
