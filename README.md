@@ -2,7 +2,7 @@
 
 **Personal & Family Information** adalah informasi personal seputar karyawan dan keluarga karyawan. Karyawan dapat menambah dan mengubah data tersebut.
 
-**Cara Menambah Anggota Keluarga**
+**Cara Menambah Anggota Keluarga**  
 Berikut cara untuk menambah anggota keluarga:
 *Buka MOANA*
    * Klik menu "Profile" di bagian bawah kanan.
