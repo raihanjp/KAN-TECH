@@ -7,6 +7,7 @@ Berikut cara untuk menambah anggota keluarga:
 **Buka MOANA**
    * Klik menu "Profile" di bagian bawah kanan.
    * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+
 **Tambah Anggota Keluarga**
    * Klik menu "Personal & Family Information", lalu klik "+ Add Family Member".
    * Isi data sesuai dengan anggota keluarga.
@@ -16,11 +17,12 @@ Berikut cara untuk menambah anggota keluarga:
      * Tombol "Back" jika ingin menambah data anggota keluarga lainnya. Tombol keranjang juga dapat dilihat di bagian bawah kanan pada menu "Personal & Family Info".
    * Penambahan data yang disubmit oleh karyawan akan disetujui oleh PBP terlebih dahulu. Request dari karyawan HO akan disetujui oleh PBP per direktorat, sementara karyawan area akan disetujui oleh PBP per regional.
 
-# Cara Mengubah Data Keluarga:
+# Cara Mengubah Data Keluarga
 Berikut cara untuk mengubah data keluarga:  
 **Buka MOANA**
    * Klik menu "Profile" di bagian bawah kanan.
    * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+
 **Ubah Data Keluarga**
    * Klik "Personal & Family Information", lalu pilih nama anggota keluarga yang ingin diubah datanya.
    * Pilih menu Profile/Address/Education yang ingin diubah datanya.
@@ -29,14 +31,16 @@ Berikut cara untuk mengubah data keluarga:
      * Tombol "Back" jika ingin menambah data anggota keluarga lainnya. Tombol keranjang juga dapat dilihat di bagian bawah kanan pada menu "Personal & Family Info".
    * Perubahan data yang disubmit oleh karyawan akan disetujui oleh PBP terlebih dahulu. Request dari karyawan HO akan disetujui oleh PBP per direktorat, sementara karyawan area akan disetujui oleh PBP per regional.
 
-# Request Pemilihan Ulang Homebase:
+# Request Pemilihan Ulang Homebase
 Berikut cara melakukan pemilihan ulang homebase:  
 **Periode Pemilihan Ulang Homebase**
    * Request Pemilihan Ulang homebase hanya dapat dilakukan selama periode yang ditentukan.
    * Pastikan untuk melengkapi terlebih dahulu data keluarga pada menu "Personal & Family Information"
+
 **Buka MOANA**
    * Klik menu "Profile" di bagian bawah kanan.
    * Masukkan kredensial (Fingerprint/Face/Pin) untuk masuk ke menu tersebut.
+
 **Pilih Homebase Baru**
    * Klik "Request change your homebase".
    * Pilih kota yang akan dijadikan homebase sesuai dengan alamat anggota keluarga inti (Karyawan, Oranguta, Mertua).
